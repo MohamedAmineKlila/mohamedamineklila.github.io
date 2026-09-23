@@ -1,0 +1,28 @@
+name: Embed CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "resume.pdf"
+      - "tools/embed_cv.py"
+      - ".github/workflows/embed-cv.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  embed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Re-embed resume.pdf into index.html
+        run: python tools/embed_cv.py
+      - name: Commit the re-embedded page
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "[auto] re-embed resume.pdf"
+          file_pattern: index.html
