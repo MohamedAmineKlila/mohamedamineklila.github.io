@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amine Klila — Full-Stack Developer</title>
   <meta name="description" content="Portfolio of Amine Klila, full-stack developer from Tunis, Tunisia. Node.js, Fastify, Vue 3, Java, Python." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mohamedamineklila.github.io/" />
+  <meta property="og:title" content="Amine Klila — Full-Stack Developer" />
+  <meta property="og:description" content="Full-stack developer in Tunis. Node.js, Fastify, Vue 3, MySQL, Java, Python — and a hands-on internship track record." />
+  <meta property="og:image" content="https://mohamedamineklila.github.io/linkedin-thumbnail.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0f1c" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0f1c'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%234fd1c5' text-anchor='middle'>AK</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -41,6 +51,7 @@
       </p>
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="resume.pdf" download class="btn btn-ghost">Download CV</a>
         <a href="https://www.linkedin.com/in/amine-klila-13b860262" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
       </div>
       <div class="hero-stats reveal">
@@ -81,6 +92,13 @@
           </div>
         </div>
         <div class="about-side reveal">
+          <div class="photo-card">
+            <div class="photo-frame">
+              <img src="photo.jpg" alt="Amine Klila" onerror="this.style.display='none';this.parentNode.classList.add('no-photo');" />
+              <div class="photo-fallback"><span>AK</span></div>
+            </div>
+            <p class="muted">Amine Klila · Tunis</p>
+          </div>
           <div class="cert-card">
             <h4>Key certifications</h4>
             <ul>
@@ -175,64 +193,122 @@
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <h2 class="section-title reveal"><span>03.</span> Things I've built</h2>
-      <div class="projects-grid">
-        <a class="project-card reveal" href="https://github.com/MohamedAmineKlila/haica-node-project" target="_blank" rel="noopener">
-          <div class="project-top">
-            <span class="project-folder">📁</span>
-            <span class="project-links">GitHub ↗</span>
-          </div>
-          <h3>HAICA Node Project</h3>
-          <p>Full-stack web app from my HAICA internship — Fastify REST API with JWT auth, role-based access control, Vue 3 frontend and MySQL.</p>
-          <div class="tags"><span>Vue 3</span><span>Fastify</span><span>TypeScript</span><span>MySQL</span></div>
-        </a>
 
+      <a class="featured reveal" href="https://github.com/MohamedAmineKlila/haica-node-project" target="_blank" rel="noopener">
+        <div class="featured-shot">
+          <img src="img/projects/haica.png" alt="HAICA app screenshot" onerror="this.style.display='none'" />
+          <span class="shot-label">HAICA — full-stack app</span>
+        </div>
+        <div class="featured-body">
+          <span class="featured-badge">★ Flagship project</span>
+          <h3>HAICA — Secure Full-Stack Web App</h3>
+          <p>
+            The application I built end-to-end during my HAICA internship: a secure
+            web app with JWT authentication, role-based access control, RESTful
+            APIs, relational database design and a Vue 3 frontend — a real
+            production-grade codebase used in an institutional context.
+          </p>
+          <div class="tags">
+            <span>Vue 3</span><span>Fastify</span><span>TypeScript</span>
+            <span>MySQL</span><span>JWT</span><span>RBAC</span>
+          </div>
+          <span class="featured-link">View on GitHub ↗</span>
+        </div>
+      </a>
+
+      <div class="projects-grid">
         <a class="project-card reveal" href="https://github.com/MohamedAmineKlila/peerconnect" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="img/projects/peerconnect.png" alt="PeerConnect screenshot" onerror="this.style.display='none'" />
+            <span class="shot-label">PeerConnect</span>
+          </div>
           <div class="project-top">
             <span class="project-folder">📁</span>
             <span class="project-links">GitHub ↗</span>
           </div>
           <h3>PeerConnect</h3>
-          <p>Academic matching platform with a Tinder-style swipe UI for student connections, real-time messaging, an AI chatbot (PeerBot, Claude API) and dark/light mode. Group project with 4 teammates.</p>
+          <p>Academic matching platform with a Tinder-style swipe UI, real-time messaging, an AI chatbot (PeerBot, Claude API) and dark/light mode.</p>
+          <ul class="project-facts">
+            <li>Real-time chat</li>
+            <li>AI chatbot</li>
+            <li>Group project · 4 devs</li>
+          </ul>
           <div class="tags"><span>Laravel 12</span><span>PHP</span><span>MariaDB</span><span>REST API</span></div>
         </a>
 
         <a class="project-card reveal" href="https://github.com/MohamedAmineKlila/bte-mobilisation-creance-java" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="img/projects/bte.png" alt="BTE app screenshot" onerror="this.style.display='none'" />
+            <span class="shot-label">BTE — mobilisation de créance</span>
+          </div>
           <div class="project-top">
             <span class="project-folder">📁</span>
             <span class="project-links">GitHub ↗</span>
           </div>
           <h3>BTE Mobilisation de Créance</h3>
-          <p>Internal bank desktop app modernizing debt-claim mobilization: Java Swing UI, validation, role-based auth, session logging and Excel export via Apache POI.</p>
+          <p>Internal bank desktop app modernizing debt-claim mobilization, iterated with direct feedback from bank staff.</p>
+          <ul class="project-facts">
+            <li>Java Swing UI</li>
+            <li>Excel export</li>
+            <li>Role-based auth</li>
+          </ul>
           <div class="tags"><span>Java</span><span>Swing</span><span>Apache POI</span></div>
         </a>
 
         <a class="project-card reveal" href="https://github.com/MohamedAmineKlila/bioskin-intelligence" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="img/projects/bioskin.png" alt="BioSkin app screenshot" onerror="this.style.display='none'" />
+            <span class="shot-label">BioSkin Intelligence</span>
+          </div>
           <div class="project-top">
             <span class="project-folder">📁</span>
             <span class="project-links">GitHub ↗</span>
           </div>
           <h3>BioSkin Intelligence</h3>
-          <p>ML-powered skin analysis using K-Means clustering and Random Forest to recommend personalized skincare routines, served through a Streamlit app.</p>
+          <p>ML-powered skin analysis recommending personalized skincare routines — clustering plus classification, served as a web app.</p>
+          <ul class="project-facts">
+            <li>K-Means clustering</li>
+            <li>Random Forest</li>
+            <li>Streamlit app</li>
+          </ul>
           <div class="tags"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Streamlit</span></div>
         </a>
 
         <a class="project-card reveal" href="https://github.com/MohamedAmineKlila/hadoop-hdfs-big-data-project" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="img/projects/hadoop.png" alt="Hadoop pipeline screenshot" onerror="this.style.display='none'" />
+            <span class="shot-label">Hadoop / HDFS pipeline</span>
+          </div>
           <div class="project-top">
             <span class="project-folder">📁</span>
             <span class="project-links">GitHub ↗</span>
           </div>
           <h3>Hadoop / HDFS Pipeline</h3>
-          <p>Big data pipeline using Hadoop and HDFS to store, process and analyze large datasets with Python and shell scripting.</p>
+          <p>Big data pipeline storing, processing and analyzing large datasets — the Hadoop stack wired end-to-end with scripting.</p>
+          <ul class="project-facts">
+            <li>Distributed storage</li>
+            <li>Python analysis</li>
+            <li>Shell automation</li>
+          </ul>
           <div class="tags"><span>Hadoop</span><span>HDFS</span><span>Python</span><span>Shell</span></div>
         </a>
 
         <a class="project-card reveal" href="https://github.com/MohamedAmineKlila/hair-salon-management-system-javafx" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="img/projects/salon.png" alt="Hair salon system screenshot" onerror="this.style.display='none'" />
+            <span class="shot-label">Hair salon system</span>
+          </div>
           <div class="project-top">
             <span class="project-folder">📁</span>
             <span class="project-links">GitHub ↗</span>
           </div>
           <h3>Hair Salon Management System</h3>
-          <p>Desktop management system for a hair salon — appointments, clients, services and billing, built with JavaFX in an MVC architecture.</p>
+          <p>Desktop management system handling appointments, clients, services and billing — a full CRUD business domain.</p>
+          <ul class="project-facts">
+            <li>Appointments</li>
+            <li>Clients &amp; services</li>
+            <li>Billing</li>
+          </ul>
           <div class="tags"><span>JavaFX</span><span>MVC</span><span>Maven</span></div>
         </a>
       </div>
@@ -281,12 +357,14 @@
       <h2 class="section-title reveal"><span>05.</span> Get in touch</h2>
       <p class="contact-lead reveal">
         I'm open to internships and junior opportunities — feel free to reach out.
-        The fastest way to reach me is LinkedIn.
+        Send me an email or connect on LinkedIn.
       </p>
       <div class="contact-actions reveal">
-        <a href="https://www.linkedin.com/in/amine-klila-13b860262" target="_blank" rel="noopener" class="btn btn-primary">Connect on LinkedIn</a>
+        <a href="mailto:klilaamine6@gmail.com" class="btn btn-primary">Say hi</a>
+        <a href="https://www.linkedin.com/in/amine-klila-13b860262" target="_blank" rel="noopener" class="btn btn-ghost">Connect on LinkedIn</a>
         <a href="https://github.com/MohamedAmineKlila" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
       </div>
+      <p class="contact-email reveal"><a href="mailto:klilaamine6@gmail.com">klilaamine6@gmail.com</a></p>
     </section>
   </main>
 
@@ -295,5 +373,7 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script data-goatcounter="https://amineklila-portfolio.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
