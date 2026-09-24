@@ -306,8 +306,8 @@ body {
 .about-text strong { color: var(--text); }
 
 .about-facts { margin-top: 24px; display: grid; gap: 8px; }
-.about-facts p { color: var(--muted); font-size: 0.95rem; }
-.about-facts span { margin-right: 8px; }
+.about-facts p { color: var(--muted); font-size: 0.95rem; display: flex; align-items: center; }
+.about-facts span { margin-right: 10px; color: var(--accent); display: inline-flex; }
 
 .about-side { display: grid; gap: 18px; align-content: start; }
 
